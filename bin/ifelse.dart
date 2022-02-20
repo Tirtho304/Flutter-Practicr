@@ -9,4 +9,11 @@ void main(List<String> args) {
   } else {
     print("The number is not divisible");
   }
+  stdout.write("Enter your name ");
+  String? name = stdin.readLineSync();
+  if (name == null || name.isEmpty) {
+    stderr.write("Name is not found");
+  } else {
+    stderr.write("The name is found");
+  }
 }
